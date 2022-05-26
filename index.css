@@ -1,0 +1,11 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: min(80vw, 56px);
+  font-family: sans-serif;
+  text-align: center;
+}
