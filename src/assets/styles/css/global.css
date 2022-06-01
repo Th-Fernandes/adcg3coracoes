@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+html body .main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.8rem;
+  background-color: #18181B;
+  min-height: 7rem;
+}
+html body .main-header .ph-list-bold {
+  font-size: 4.8rem;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+
+p, small, span {
+  font-family: "Arvo", serif;
+  font-weight: normal;
+}
+
+/*# sourceMappingURL=global.css.map */

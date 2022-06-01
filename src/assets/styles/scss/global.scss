@@ -1,0 +1,48 @@
+$brand: #EA7E0B;
+$brand-hover: #F8B063;
+$white: #FFFFFF;
+$text: #393939;
+$dark-bg: #18181B;
+$link: #5B618A;
+$link-visited: #5B507A;
+
+//display config
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; 
+    
+    body {
+        //padding: 0 0.8rem;
+
+        .main-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 0.8rem;
+            background-color: $dark-bg;
+            min-height: 7rem;
+
+            .ph-list-bold {
+                font-size: 4.8rem;
+                color: $white;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+//texts config
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+
+p, small, span {
+    font-family: 'Arvo', serif;
+    font-weight: normal;
+}

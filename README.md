@@ -1,1 +1,0 @@
-<h1>ADCG - 3 corações</h1>
