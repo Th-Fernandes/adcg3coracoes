@@ -15,6 +15,9 @@ html body .main-header {
   background-color: #18181B;
   min-height: 7rem;
 }
+html body .main-header > h1 {
+  cursor: pointer;
+}
 html body .main-header .ph-list-bold {
   font-size: 4.8rem;
   color: #FFFFFF;
@@ -29,6 +32,18 @@ h1, h2, h3, h4, h5, h6 {
 p, small, span {
   font-family: "Arvo", serif;
   font-weight: normal;
+}
+
+button {
+  cursor: pointer;
+}
+
+.default-light-button {
+  min-height: 4.5rem;
+  border-radius: 3.2rem;
+  background-color: #FFFFFF;
+  border: none;
+  font-size: 1.6rem;
 }
 
 /*# sourceMappingURL=global.css.map */

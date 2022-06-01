@@ -1,0 +1,39 @@
+main .sobre-nos-card {
+  min-height: 33.9rem;
+  background: url(../../img/lp-sobrenos-bg-mobile.svg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 0.8rem 4.5rem;
+}
+@media (min-width: 768px) {
+  main .sobre-nos-card {
+    background: url(../../img/lp-sobrenos-bg.svg) no-repeat center;
+    background-size: cover;
+    justify-content: center;
+    padding: 0;
+  }
+}
+main .sobre-nos-card > h2 {
+  font-size: clamp(1.8rem, 2.5vw, 3.6rem);
+  text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.505);
+  font-weight: 900;
+  color: #FFFFFF;
+  line-height: 3rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  main .sobre-nos-card > h2 {
+    margin-bottom: 2.5rem;
+  }
+}
+main .sobre-nos-card .default-light-button {
+  font-size: clamp(1.6rem, 2.5vw, 1.8rem);
+  width: min(90%, 27.8rem);
+  height: 4.5rem;
+}
+
+/*# sourceMappingURL=landingPage.css.map */

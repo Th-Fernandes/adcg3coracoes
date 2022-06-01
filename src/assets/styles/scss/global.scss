@@ -1,10 +1,4 @@
-$brand: #EA7E0B;
-$brand-hover: #F8B063;
-$white: #FFFFFF;
-$text: #393939;
-$dark-bg: #18181B;
-$link: #5B618A;
-$link-visited: #5B507A;
+@use 'colors';
 
 //display config
 * {
@@ -24,12 +18,16 @@ html {
             align-items: center;
             justify-content: space-between;
             padding: 0 0.8rem;
-            background-color: $dark-bg;
+            background-color: colors.$dark-bg;
             min-height: 7rem;
+
+            > h1 {
+                cursor: pointer;
+            }
 
             .ph-list-bold {
                 font-size: 4.8rem;
-                color: $white;
+                color: colors.$white;
                 cursor: pointer;
             }
         }
@@ -45,4 +43,18 @@ h1, h2, h3, h4, h5, h6 {
 p, small, span {
     font-family: 'Arvo', serif;
     font-weight: normal;
+}
+
+//buttons config 
+
+button {
+    cursor: pointer;
+}
+
+.default-light-button {
+    min-height: 4.5rem;
+    border-radius: 3.2rem;
+    background-color: colors.$white;
+    border: none;
+    font-size: 1.6rem;
 }
