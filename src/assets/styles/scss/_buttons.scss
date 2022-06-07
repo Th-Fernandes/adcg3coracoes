@@ -1,0 +1,29 @@
+@use 'colors';
+
+@mixin defaultButton {
+  min-height: 4.5rem;
+  border-radius: 3.2rem;
+  border: none;
+}
+
+@mixin lightButton {
+  @include defaultButton();
+  background-color: colors.$white;
+  font-size: 1.6rem;
+}
+
+@mixin brandButton {
+  @include defaultButton();
+  background-color: colors.$brand;
+  color: colors.$white;
+  transition: background-color 0.15s;
+  font-size: 2.4rem;
+
+  &:hover {
+    background-color: colors.$brand-hover;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 28.8rem;
+  }
+}
