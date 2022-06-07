@@ -7,6 +7,9 @@
 html {
   font-size: 62.5%;
 }
+html body {
+  font-family: "Arvo", serif;
+}
 html body .main-header {
   display: flex;
   align-items: center;
@@ -15,21 +18,66 @@ html body .main-header {
   background-color: #18181B;
   min-height: 7rem;
 }
-html body .main-header > h1 {
+html body .main-header .header-container {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 144rem;
+  margin: 0 auto;
+}
+html body .main-header .header-container > h1 {
   cursor: pointer;
 }
-html body .main-header .ph-list-bold {
+html body .main-header .header-container .mobile-ver .ph-list-bold {
   font-size: 4.8rem;
   color: #FFFFFF;
   cursor: pointer;
 }
+@media (min-width: 768px) {
+  html body .main-header .header-container .mobile-ver {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+html body .main-header .header-container .desktop-ver {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+@media (min-width: 768px) {
+  html body .main-header .header-container .desktop-ver {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+  html body .main-header .header-container .desktop-ver > nav > ul {
+    display: flex;
+  }
+  html body .main-header .header-container .desktop-ver > nav > ul > li:not(:last-child) {
+    margin-right: 2.5rem;
+  }
+}
+@media (min-width: 768px) {
+  html body .main-header .header-container {
+    padding: 0 3.2rem;
+  }
+}
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Inter", sans-serif;
   font-weight: bold;
 }
 
-p, small, span {
+p,
+small,
+span {
   font-family: "Arvo", serif;
   font-weight: normal;
 }
@@ -44,6 +92,13 @@ button {
   background-color: #FFFFFF;
   border: none;
   font-size: 1.6rem;
+}
+
+a {
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=global.css.map */

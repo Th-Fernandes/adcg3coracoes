@@ -1,60 +1,126 @@
-@use 'colors';
+@use "colors";
+
+@mixin hideContent {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+@mixin showContent {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
 
 //display config
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%; 
-    
-    body {
-        //padding: 0 0.8rem;
+  font-size: 62.5%;
 
-        .main-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 0.8rem;
-            background-color: colors.$dark-bg;
-            min-height: 7rem;
+  body {
+    font-family: "Arvo", serif;
 
-            > h1 {
-                cursor: pointer;
-            }
+    .main-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 0.8rem;
+      background-color: colors.$dark-bg;
+      min-height: 7rem;
 
-            .ph-list-bold {
-                font-size: 4.8rem;
-                color: colors.$white;
-                cursor: pointer;
-            }
+      .header-container {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 144rem;
+        margin: 0 auto;
+
+        > h1 {
+          cursor: pointer;
         }
+
+        .mobile-ver {
+          .ph-list-bold {
+            font-size: 4.8rem;
+            color: colors.$white;
+            cursor: pointer;
+          }
+
+          @media (min-width: 768px) {
+            @include hideContent();
+          }
+        }
+
+        .desktop-ver {
+          @include hideContent();
+
+          @media (min-width: 768px) {
+            @include showContent();
+
+            > nav {
+              > ul {
+                display: flex;
+
+                > li {
+                  &:not(:last-child) {
+                    margin-right: 2.5rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        @media (min-width: 768px) {
+          padding: 0 3.2rem;
+        }
+      }
     }
+  }
 }
 
 //texts config
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Inter', sans-serif;
-    font-weight: bold;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
 }
 
-p, small, span {
-    font-family: 'Arvo', serif;
-    font-weight: normal;
+p,
+small,
+span {
+  font-family: "Arvo", serif;
+  font-weight: normal;
 }
 
-//buttons config 
+//buttons config
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .default-light-button {
-    min-height: 4.5rem;
-    border-radius: 3.2rem;
-    background-color: colors.$white;
-    border: none;
-    font-size: 1.6rem;
+  min-height: 4.5rem;
+  border-radius: 3.2rem;
+  background-color: colors.$white;
+  border: none;
+  font-size: 1.6rem;
+}
+
+//links config
+a {
+  color: colors.$white;
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
 }
