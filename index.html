@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     <!--scripts-->
     <script src="https://unpkg.com/phosphor-icons"></script>
-    <script src="./App.js" defer></script>
+    <script src="./App.js"  type="module" defer></script>
 </head>
 <body>
     <header class="main-header">
@@ -24,7 +24,21 @@
             </h1>
     
             <div class="mobile-ver">
-                <i class="ph-list-bold"></i>
+                <i class="ph-list-bold open-modal-button" id="toggleModalDisplayButton"></i>
+
+                <section class="mobile-modal-menu">
+                    <nav class="mobile-nav">
+                        <ul>
+                            <li> <a href="#"> Guia do novo convertido </a> </li>
+                            <li> <a href="#"> Quem somos </a> </li>
+                            <li> <a href="./src/assets/pages/louvores.html"> Louvores </a> </li>
+                        </ul>
+
+                        <button class="close-modal">
+                            <i class="ph-x-circle-fill" id="closeModalButton"></i>
+                        </button>
+                    </nav>
+                </section>
             </div>
     
             <div class="desktop-ver">
@@ -32,7 +46,7 @@
                     <ul>
                         <li> <a href="#"> Guia do novo convertido </a> </li>
                         <li> <a href="#"> Quem somos </a> </li>
-                        <li> <a href="#"> Louvores </a> </li>
+                        <li> <a href="./src/assets/pages/louvores.html"> Louvores </a> </li>
                     </ul>
                 </nav>
             </div>

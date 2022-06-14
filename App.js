@@ -1,1 +1,3 @@
-console.log('hello world')
+import { toggleModalState } from "./src/scripts/dom/index.js";
+
+toggleModalState()
