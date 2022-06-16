@@ -1,0 +1,22 @@
+@use '../../../../assets/styles/scss/utils';
+
+
+.desktop-ver {
+  @include utils.hideContent();
+
+  @media (min-width: 768px) {
+    @include utils.showContent();
+
+    > nav {
+      > ul {
+        display: flex;
+
+        > li {
+          &:not(:last-child) {
+            margin-right: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+}
