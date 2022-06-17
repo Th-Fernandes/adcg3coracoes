@@ -1,20 +1,26 @@
+import { useRouter } from "next/router";
 import { MobileNavGlobalHeader } from "./mobile-nav";
 import { DesktopNavGlobalHeader } from "./desktop-nav";
-import headerLogo from "../../../../public/img/ADCG - LOGO.svg";
 import globalHeaderStyle from "./header.module.scss";
+import headerLogo from "../../../../public/img/ADCG - LOGO.svg";
 
 export function GlobalHeader() {
+  const router = useRouter()
+
   function showApplicationRoutes() {
     const navegacaoAplicacao = [ 
-      'Guia do novo convertido',
-      'Quem somos',
-      'Louvores'
+      {rout: '/Guia-novo-convertido', title:'Guia do novo convertido'},
+      {rout: 'Sobre-nos', title: 'Quem somos'},
+      {rout: '/Louvores', title: 'Louvores'}
     ]
 
     return (
-      navegacaoAplicacao.map((rota, index) => (
-        <li key={index}>
-          <a href="#">{rota}</a>
+      navegacaoAplicacao.map(({rout, title}, index) => (
+        <li 
+          onClick={() => router.push(rout) }
+          key={index}
+        > 
+          <a href="#">{title}</a>
         </li>
       ))
     )
@@ -24,7 +30,7 @@ export function GlobalHeader() {
 
     <header className={globalHeaderStyle["main-header"]}>
       <div className={globalHeaderStyle["header-container"]}>
-        <h1>
+        <h1 onClick={() => router.push('/') }>
           <img src={headerLogo.src} alt="Voltar ao menu principal" />
         </h1>
 

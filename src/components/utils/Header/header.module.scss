@@ -9,7 +9,7 @@
   background-color: colors.$dark-bg;
   min-height: 7rem;
   height: 5rem;
-  position: fixed;
+  position: sticky;
   inset: 0;
 
   .header-container {

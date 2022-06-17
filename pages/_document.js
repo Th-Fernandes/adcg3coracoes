@@ -1,5 +1,6 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 
+
 export default function Document() {
   return (
     <Html>
@@ -11,7 +12,7 @@ export default function Document() {
           <script src="https://unpkg.com/phosphor-icons"></script>
       </Head>
       <body>
-        <Main />
+        <Main/>
         <NextScript />
       </body>
     </Html>
