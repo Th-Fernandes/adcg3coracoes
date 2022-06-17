@@ -78,6 +78,6 @@ export function LandingPage() {
           </div>
         </section>
       </main>
-  </>
+    </>
   )
 }
