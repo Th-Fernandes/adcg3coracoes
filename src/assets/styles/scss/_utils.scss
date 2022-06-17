@@ -53,12 +53,12 @@
 
 @mixin timelineContainerCards {
   display: grid;
-  grid-template-columns: repeat( 5 , 28rem);
+  grid-template-columns: repeat( 6 , 28rem);
   column-gap: 3rem;
   overflow-x: auto;
   
   @media (min-width: 768px) {
-    grid-template-columns: repeat( 5 , 40rem);
+    grid-template-columns: repeat( 6 , 40rem);
   }
 
  

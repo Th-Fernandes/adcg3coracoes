@@ -1,0 +1,34 @@
+@use "../../../../assets/styles/scss/colors";
+@use "../../../../assets/styles/scss/utils";
+@use "../../../../assets/styles/scss/buttons";
+
+main {
+  .cronograma-semana {
+    @include utils.informativeSection();
+    margin: 3.5rem auto ;
+
+
+    .section-container {
+        > h2 {
+            @media (min-width: 768px) {
+                margin-bottom: 5rem;
+            }
+        }
+
+        .culto-dias {
+            @include utils.timelineContainerCards();
+            
+
+            .culto-dia {
+                @include utils.timelineCard();
+            }
+
+            
+        }
+    }
+
+    @media (min-width: 768px) {
+        margin: 12.5rem auto 5rem;
+    }
+}
+}

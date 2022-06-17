@@ -1,13 +1,7 @@
-import { GlobalHeader } from "../src/components/utils/Header"
+import { GuiaNovoConvertidoPage } from "../src/components/guia-novo-convertido"
 
 export default function() {
   return (
-    <>
-      <GlobalHeader/>
-
-      <main>
-        <h2>Hello world</h2>
-      </main>
-    </>
+    <GuiaNovoConvertidoPage />
   )
 }
