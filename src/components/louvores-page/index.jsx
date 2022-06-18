@@ -6,7 +6,18 @@ export function LouvoresPage() {
       <GlobalHeader/>
 
       <main>
-        <h1>hello world</h1>
+        <section>
+          <span>
+            Quer ouvir um bom louvor mas não sabe o que ouvir? 
+            Recomendamos esses louvores que cantamos em nossa congregação.
+          </span>
+
+          <ul>
+            <li>
+              
+            </li>
+          </ul>
+        </section>
       </main>
     </>
   )

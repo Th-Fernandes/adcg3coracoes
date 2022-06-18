@@ -8,7 +8,7 @@ export function GlobalCronograma() {
       {diaSemana: 'SEXTA', tituloCulto: 'culto da vitória	', horario: '19:00'},
       {diaSemana: 'SÁBADO', tituloCulto: 'culto de libertação', horario: '09:00'},
       {diaSemana: 'DOMINGO', tituloCulto: 'escola bíblica dominical', horario: '09:00'},
-       {diaSemana: 'DOMINGO - 18hrs', tituloCulto: 'culto de adoração'},
+       {diaSemana: 'DOMINGO', tituloCulto: 'culto de adoração', horario: '18:00'},
     ]
 
     return (

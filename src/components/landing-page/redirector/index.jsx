@@ -1,6 +1,13 @@
 import landingPageStyles from "./index.module.scss";
+import {useRouter} from "next/router";
 
 export function RedirectorLandingPage() {
+  const router = useRouter()
+
+  function handleRedirectToGuiaNovoConvertidoPage() {
+    router.push('/Guia-novo-convertido')
+  }
+
   return (
     <section className={landingPageStyles["guia-novo-convertido"]}>
       <div className={landingPageStyles["section-container"]}>
@@ -11,7 +18,9 @@ export function RedirectorLandingPage() {
           temos um guia perfeito para te auxiliar!
         </p>
 
-        <button>acesse aqui</button>
+        <button onClick={handleRedirectToGuiaNovoConvertidoPage}>
+          acesse aqui
+        </button>
       </div>
     </section>
   )
