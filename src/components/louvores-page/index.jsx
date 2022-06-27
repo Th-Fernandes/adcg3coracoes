@@ -1,4 +1,5 @@
-import { GlobalHeader } from "../utils/Header"
+import { GlobalHeader } from "../utils/Header";
+import {PlaylistOptionsLouvoresPage} from "./playlist-options";
 
 export function LouvoresPage() {
   return (
@@ -6,18 +7,7 @@ export function LouvoresPage() {
       <GlobalHeader/>
 
       <main>
-        <section>
-          <span>
-            Quer ouvir um bom louvor mas não sabe o que ouvir? 
-            Recomendamos esses louvores que cantamos em nossa congregação.
-          </span>
-
-          <ul>
-            <li>
-              
-            </li>
-          </ul>
-        </section>
+        <PlaylistOptionsLouvoresPage/>
       </main>
     </>
   )

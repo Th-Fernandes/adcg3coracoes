@@ -16,6 +16,7 @@
 @mixin maxSizeContainer {
   max-width: 144rem;
   margin: 0 auto;
+  padding: 0 3.2rem;
 }
 
 @mixin informativeSection {
