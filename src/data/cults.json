@@ -1,0 +1,26 @@
+{
+  
+    "quarta":{
+      "title": "QUARTA",
+      "caption": "O culto de ensino",
+      "description": "Quer aprofundar seus conhecimentos sobre a bíblia, entendendo ponto a ponto em relação a mensagem passada? O culto de ensino é a solução perfeita!"
+    },
+
+    "sexta": {
+      "title": "SEXTA",
+      "caption": "O culto da vitória",
+      "description": "lorem"
+    },
+
+    "sabado": {
+      "title": "SABADO",
+      "caption": "O culto de libertação",
+      "description": "lorem"
+    },
+    "domingo": {
+      "title": "DOMINGO",
+      "caption": "O culto de adoração",
+      "description": "lorem"
+    }
+  
+}
