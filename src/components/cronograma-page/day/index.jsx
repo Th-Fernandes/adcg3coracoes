@@ -1,21 +1,18 @@
+import { useState } from "react";
 import { GlobalHeader } from "../../utils/Header";
 import { GlobalCronograma } from "../../utils/main/cronograma";
 import { CultDescriptionCronogramaPage } from "./cult-description";
 
 export function DayCronogramaPage() {
-  /* 
-    verificar o dia da semana pela rota,
-    imprimir na tela o dia 
-  */
-
+  const [toggleDescriptionByRoute, setToggleDescriptionByRoute] = useState()
   
   return (
     <>
       <GlobalHeader/>
 
       <main>
-        <CultDescriptionCronogramaPage/>
-        <GlobalCronograma />
+        <CultDescriptionCronogramaPage actualRoute={toggleDescriptionByRoute}/>
+        <GlobalCronograma onChangeRoute={setToggleDescriptionByRoute} />
       </main>
     </>
   )

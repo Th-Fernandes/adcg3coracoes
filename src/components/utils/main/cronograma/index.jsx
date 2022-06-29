@@ -1,6 +1,10 @@
+import { useRouter } from 'next/router';
+import { useState } from 'react';
 import GlobalCronogramaStyle from './index.module.scss';
 
-export function GlobalCronograma() {
+export function GlobalCronograma({onChangeRoute}) {
+  const nextRouter = useRouter()
+
   function showCults() {
     const dadosCultos = [
       {diaSemana: 'QUARTA', tituloCulto: 'círculo de oração', horario: '09:00'},
@@ -19,10 +23,18 @@ export function GlobalCronograma() {
             <p>{tituloCulto}</p>
             <small>{horario}</small>
 
-            <button>saiba mais</button>
-          </article>
+            <button
+              onClick={() => {
+                const dayToLowerCase = diaSemana.toLowerCase()
+                const removeAccentuation = dayToLowerCase.normalize('NFD').replace(/[\u0300-\u036f]/g, "")
 
-          
+                nextRouter.push(`/cronograma/${removeAccentuation}`)
+                onChangeRoute(removeAccentuation)
+              }}  
+            >
+              saiba mais
+            </button>
+          </article>          
         </li>
       ))
     )
@@ -37,8 +49,6 @@ export function GlobalCronograma() {
 
       <ul className={GlobalCronogramaStyle["culto-dias"]}>
         {showCults()}
-
-
       </ul>
     </div>
   </section>

@@ -2,10 +2,14 @@ import { useEffect, useState } from "react"
 import cultsDescription from "../../../../data/cults.json"
 import cronogramaPageStyles from "./index.module.scss"
 
-export function CultDescriptionCronogramaPage() {
+export function CultDescriptionCronogramaPage({actualRoute}) {
   const [cultInfo, setCultInfo ] = useState({})
   
-  
+  useEffect(() => {
+    setCultInfo(cultsDescription[actualRoute])
+  }, [actualRoute])
+
+
   useEffect(() => {
     const [ nullPath, fatherPath, currentPath ] = window.location.pathname.split('/')
     const getDayByPath = cultsDescription[currentPath]
@@ -14,6 +18,10 @@ export function CultDescriptionCronogramaPage() {
     setCultInfo(getDayByPath)
 
   }, [])
+
+  
+
+
   
   return (
     <section className={cronogramaPageStyles["cult-description-container"]}>
