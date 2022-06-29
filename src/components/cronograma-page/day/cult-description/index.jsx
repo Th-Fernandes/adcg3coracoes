@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import cultsDescription from "../../../../data/cults.json"
-
+import cronogramaPageStyles from "./index.module.scss"
 
 export function CultDescriptionCronogramaPage() {
   const [cultInfo, setCultInfo ] = useState({})
@@ -16,12 +16,12 @@ export function CultDescriptionCronogramaPage() {
   }, [])
   
   return (
-    <section>
-      <article>
-        <h2>{cultInfo.title}</h2>
-        <span>{cultInfo.caption}</span>
+    <section className={cronogramaPageStyles["cult-description-container"]}>
+      <article className={cronogramaPageStyles["cult-description-article"]} >
+        <h2 className={cronogramaPageStyles["cult-description-title"]}>{cultInfo.title}</h2>
+        <span className={cronogramaPageStyles["cult-description-caption"]}>{cultInfo.caption}</span>
 
-        <p>
+        <p className={cronogramaPageStyles["cult-description-description"]}>
           {cultInfo.description}
         </p>  
       </article>

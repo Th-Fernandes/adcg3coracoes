@@ -20,6 +20,8 @@
 }
 
 @mixin informativeSection {
+
+
   @include maxSizeContainer();
   padding: 0 1.2rem;
 
@@ -44,14 +46,4 @@
       line-height: 3.6rem;
     }
   }
-}
-
-/*
-  timelineContainerCards e timelineCard devem ser utilizados juntos
-  timelineContainerCards: o container (ul)
-  timelineCard: os filhos (li)
-*/
-
-@mixin timelineCard {
-
 }

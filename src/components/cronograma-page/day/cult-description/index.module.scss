@@ -1,0 +1,38 @@
+@use "../../../../assets/styles/scss/utils";
+
+main {
+  .cult-description-container {
+    margin-top: 2.5rem;
+
+    @media (min-width: 768px) {
+      @include utils.maxSizeContainer();
+      margin-top: 5rem;
+    }
+
+    .cult-description-article {
+      text-align: center;
+      max-width: 80rem;
+
+      @media (min-width: 768px) {
+        text-align: inherit;
+      }
+
+      .cult-description-title {
+        font-size: clamp(3.6rem, 5vw, 6rem);
+      }
+
+      .cult-description-caption {
+        display: block;
+        font-size: clamp(1.8rem, 3vw, 2.4rem);
+        margin-top: 0.25rem;
+      }
+
+      .cult-description-description {
+        text-align: left;
+        line-height: 2.5rem;
+        margin-top: 1.5rem;
+        
+      }
+    }
+  }
+}

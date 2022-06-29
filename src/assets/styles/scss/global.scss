@@ -33,6 +33,8 @@ small,
 span {
   font-family: "Arvo", serif;
   font-weight: normal;
+  font-size: clamp(1.4rem ,2.5vw, 1.8rem);
+  padding: 0 0.8rem;
 }
 
 //buttons config

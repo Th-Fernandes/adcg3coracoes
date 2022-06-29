@@ -1,4 +1,5 @@
 import { GlobalHeader } from "../../utils/Header";
+import { GlobalCronograma } from "../../utils/main/cronograma";
 import { CultDescriptionCronogramaPage } from "./cult-description";
 
 export function DayCronogramaPage() {
@@ -14,6 +15,7 @@ export function DayCronogramaPage() {
 
       <main>
         <CultDescriptionCronogramaPage/>
+        <GlobalCronograma />
       </main>
     </>
   )
