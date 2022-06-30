@@ -1,43 +1,39 @@
 import { useRouter } from 'next/router';
-import { useState } from 'react';
+import cultsDescription from "../../../../data/cults.json";
 import GlobalCronogramaStyle from './index.module.scss';
 
 export function GlobalCronograma({onChangeRoute}) {
   const nextRouter = useRouter()
 
   function showCults() {
-    const dadosCultos = [
-      {diaSemana: 'QUARTA', tituloCulto: 'círculo de oração', horario: '09:00'},
-      {diaSemana: 'QUARTA', tituloCulto: 'culto de ensino', horario: '19:00'},
-      {diaSemana: 'SEXTA', tituloCulto: 'culto da vitória	', horario: '19:00'},
-      {diaSemana: 'SÁBADO', tituloCulto: 'culto de libertação', horario: '09:00'},
-      {diaSemana: 'DOMINGO', tituloCulto: 'escola bíblica dominical', horario: '09:00'},
-       {diaSemana: 'DOMINGO', tituloCulto: 'culto de adoração', horario: '18:00'},
-    ]
+    console.log(Object.entries(cultsDescription))
+    const jsonCultsDataToArray = Object.entries(cultsDescription)
 
-    return (
-      dadosCultos.map(({diaSemana, tituloCulto, horario}, index) => (
+    const printData = jsonCultsDataToArray
+      .map(([jsonDataName, {title, caption, time}], index) => (
         <li className={GlobalCronogramaStyle["culto-dia"]} key={index}>
-          <article className={GlobalCronogramaStyle["descricao-culto"]}>
-            <h3>{diaSemana}</h3>
-            <p>{tituloCulto}</p>
-            <small>{horario}</small>
+           <article className={GlobalCronogramaStyle["descricao-culto"]}>
+             <h3>{title}</h3>
+             <p>{caption}</p>
+             <small>{time}</small>
 
-            <button
-              onClick={() => {
-                const dayToLowerCase = diaSemana.toLowerCase()
-                const removeAccentuation = dayToLowerCase.normalize('NFD').replace(/[\u0300-\u036f]/g, "")
+             <button
+               onClick={() => {
+                 const dayToLowerCase = jsonDataName.toLowerCase()
+                 const removeAccentuation = dayToLowerCase.normalize('NFD').replace(/[\u0300-\u036f]/g, "")
 
-                nextRouter.push(`/cronograma/${removeAccentuation}`)
-                onChangeRoute(removeAccentuation)
-              }}  
-            >
-              saiba mais
-            </button>
-          </article>          
-        </li>
+                 nextRouter.push(`/cronograma/${removeAccentuation}`)
+                 
+                 const isRouteChanging = onChangeRoute && onChangeRoute(removeAccentuation)
+               }}  
+             >
+               saiba mais
+             </button>
+           </article>          
+         </li>
       ))
-    )
+
+    return printData
   }
 
   

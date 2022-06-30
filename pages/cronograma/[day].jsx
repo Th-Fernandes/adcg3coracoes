@@ -5,7 +5,7 @@ export default function () {
   const [isUrlValid, setIsUrlValid] = useState(true)
 
   useEffect(() => {
-    const validDays = ['quarta', 'sexta', 'sabado', 'domingo']
+    const validDays = ['quarta-manha','quarta-noite', 'sexta', 'sabado', 'domingo-manha', 'domingo-noite']
     const getCurrentUrl = window.location.href
 
     for(let day of validDays) {
