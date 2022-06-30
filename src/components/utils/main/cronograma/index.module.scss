@@ -4,7 +4,7 @@
 
 main {
   .cronograma-semana {
-    @include utils.informativeSection();
+    @include utils.maxSizeContainer();
     margin: 3.5rem auto ;
 
 
@@ -21,7 +21,7 @@ main {
             column-gap: 3rem;
             overflow-x: auto;
             
-            @media (min-width: 768px) {
+            @media (min-width: 1024px) {
               grid-template-columns: repeat( 6 , 40rem);
             }
           
@@ -39,7 +39,7 @@ main {
                 list-style-type: none;
                 border-radius: 3rem;
 
-                @media (min-width: 768px) {
+                @media (min-width: 1024px) {
                     width: 40rem;
                     height: 40rem;
                 }
@@ -50,7 +50,7 @@ main {
               
                   h3 {
                     font-size: 1em;
-                    @media (min-width: 768px) {
+                    @media (min-width: 1024px) {
                       font-size: 1.75em;
                     }
                   }
@@ -59,7 +59,7 @@ main {
                     font-size: 2.4rem;
                     font-family: "Inter", sans-serif;
               
-                    @media (min-width: 768px) {
+                    @media (min-width: 1024px) {
                       font-size: 1.25em;
                     }
                   }
@@ -70,7 +70,7 @@ main {
                   width: 100%;
                   margin: 0.5rem auto 1.5rem;
               
-                  @media (min-width: 768px) {
+                  @media (min-width: 1024px) {
                     margin: 3.5rem auto 2.5rem;
                     font-size: 2.4rem;
                   }
@@ -83,7 +83,7 @@ main {
         }
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
         margin: 12.5rem auto 5rem;
     }
 }

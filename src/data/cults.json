@@ -9,7 +9,12 @@
       "title": "QUARTA",
       "caption": "O culto de ensino",
       "description": "Quer aprofundar seus conhecimentos sobre a bíblia, entendendo ponto a ponto em relação a mensagem passada? O culto de ensino é a solução perfeita!",
-      "time": "19:00"
+      "time": "19:00",
+      "speaker": {
+        "name": "Adriel Souza"
+      }
+        
+      
     },
 
     "sexta": {

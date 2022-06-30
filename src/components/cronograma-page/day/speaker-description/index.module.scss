@@ -1,0 +1,15 @@
+main {
+  section {
+     .speaker {
+      text-align: center;
+    }
+
+    .speaker-container {
+      .speaker-img {
+        width: min(100%, 42.5rem);
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+}

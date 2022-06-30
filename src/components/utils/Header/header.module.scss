@@ -5,28 +5,26 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1.2rem;
   background-color: colors.$dark-bg;
   box-shadow: 0px 0px 1rem colors.$dark-bg ;
   min-height: 7rem;
-  height: 5rem;
   position: sticky;
   inset: 0;
 
   .header-container {
-    @include utils.maxSizeContainer();
     flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
 
+    @media (min-width: 768px) {
+      @include utils.maxSizeContainer();
+    }
+    
     > h1 {
       cursor: pointer;
     }
 
-    @media (min-width: 768px) {
-      padding: 0 3.2rem;
-    }
+   
   }
 }
