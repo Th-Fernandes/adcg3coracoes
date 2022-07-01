@@ -5,11 +5,15 @@ import { useState } from "react";
 export function MobileNavGlobalHeader({ showApplicationRoutes }) {
   const [isMenuShowed, setIsMenuShowed] = useState(false)
 
+  function handleToggleNavDisplay() {
+    setIsMenuShowed(actualState => !actualState)
+  }
+
 
   return (
     <div className={globalHeaderStyle["mobile-ver"]}>
       <List
-        onClick={() => setIsMenuShowed(actualState => !actualState)}
+        onClick={handleToggleNavDisplay}
         size={48}
         color="#ffffff"
         weight="bold"
@@ -21,7 +25,9 @@ export function MobileNavGlobalHeader({ showApplicationRoutes }) {
             {showApplicationRoutes()}
           </ul>
 
-          <button className={globalHeaderStyle["close-modal"]}>
+          <button 
+            onClick={handleToggleNavDisplay}
+            className={globalHeaderStyle["close-modal"]}>
             <XCircle size={48} color="#ffffff" weight="fill" />
           </button>
         </nav>

@@ -11,7 +11,8 @@ export function GlobalHeader() {
     const navegacaoAplicacao = [ 
       {rout: '/Guia-novo-convertido', title:'Guia do novo convertido'},
       {rout: 'Sobre-nos', title: 'Quem somos'},
-      {rout: '/Louvores', title: 'Louvores'}
+      {rout: '/cronograma/', title: 'Cronograma'},
+      {rout: '/Louvores', title: 'Louvores'},
     ]
 
     return (
