@@ -8,7 +8,7 @@
     "quarta-noite":{
       "title": "QUARTA",
       "caption": "O culto de ensino",
-      "description": "Quer aprofundar seus conhecimentos sobre a bíblia, entendendo ponto a ponto em relação a mensagem passada? O culto de ensino é a solução perfeita!",
+      "description": "Quer aprofundar seus conhecimentos sobre a bíblia, entendendo ponto a ponto sobre cada livro? O culto de ensino é a solução perfeita!",
       "time": "19:00",
       "speaker": {
         "name": "Adriel Souza"
@@ -39,7 +39,7 @@
     "domingo-noite": {
       "title": "DOMINGO",
       "caption": "O culto de adoração",
-      "description": "lorem",
+      "description": "Adorar a Deus e viver em comunhão é essencial na vida do cristão. Venha louvar e engrandecer o nome de Deus conosco. ",
       "time": "18:00"
     }
     

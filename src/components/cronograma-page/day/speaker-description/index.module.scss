@@ -1,5 +1,10 @@
+@use "../../../../assets/styles/scss/colors";
+@use "../../../../assets/styles/scss/buttons";
+
 main {
-  section {
+  .speaker-section {
+    margin: 2rem 0 ;
+    padding: 0;
      .speaker {
       text-align: center;
     }
@@ -8,7 +13,52 @@ main {
       .speaker-img {
         width: min(100%, 42.5rem);
         display: block;
-        margin: 0 auto;
+        margin: 0 auto -0.1rem;
+
+        @media(min-width: 768px) {
+          margin: 0 auto -18.25rem;
+        }
+      }
+
+      .speaker-info {
+        padding: 6.4rem 0.8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 40rem;
+        background-color: colors.$dark-bg;
+        color: colors.$light-text;
+
+        @media (min-width: 768px) {
+          height: 47.5rem;
+          justify-content: flex-end;
+        }
+
+        @media (min-width: 1024px) {
+          height: 55rem;
+          
+        }
+
+        .speaker-name {
+          text-align: center;
+
+          @media (min-width: 768px) {
+            margin: 2rem 0;
+          }
+        }
+
+        .speaker-description {
+          font-family: "Inter", sans-serif;
+          max-width: 60rem;
+          margin: 0 auto 1.2rem;
+        }
+
+        .speaker-redirector-button {
+          @include buttons.lightButton();
+          width: min(90%, 27rem);
+          margin-inline:  auto;
+        }
+        
       }
     }
   }
