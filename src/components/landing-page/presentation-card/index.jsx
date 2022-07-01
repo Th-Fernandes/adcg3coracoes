@@ -1,11 +1,16 @@
+import { useRouter } from "next/router";
 import landingPageStyles from "./index.module.scss";
 
 export function PresentationCardLandingPage() {
+  const nextRouter = useRouter();
+
   return (
     <section className={landingPageStyles['sobre-nos-card']}>
       <h2> SOMOS A ADCG - CONGREGAÇÃO 3 CORAÇÕES </h2>
 
-      <button className={landingPageStyles["default-light-button"]}>
+      <button 
+        onClick={() => nextRouter.push('/Sobre-nos')}
+        className={landingPageStyles["default-light-button"]}>
         Conheça mais sobre nós
       </button>
     </section>

@@ -18,15 +18,15 @@ main {
         .culto-dias {
             display: grid;
             grid-template-columns: repeat( 6 , 28rem);
+            height: 30rem;
             column-gap: 3rem;
             overflow-x: auto;
             
             @media (min-width: 1024px) {
+              height: 42rem;
               grid-template-columns: repeat( 6 , 40rem);
             }
           
-            
-
             .culto-dia {
                 display: flex;
                 align-items: flex-end;
@@ -38,6 +38,11 @@ main {
                 color: colors.$white;
                 list-style-type: none;
                 border-radius: 3rem;
+                
+                ::selection {
+                  background-color: colors.$brand-hover;
+
+                }
 
                 @media (min-width: 1024px) {
                     width: 40rem;

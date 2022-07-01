@@ -15,13 +15,9 @@ export function CultDescriptionCronogramaPage({actualRoute}) {
     const getDayByPath = cultsDescription[currentPath]
     console.log(getDayByPath)
 
-    setCultInfo(getDayByPath)
+    currentPath && setCultInfo(getDayByPath)
 
   }, [])
-
-  
-
-
   
   return (
     <section className={cronogramaPageStyles["cult-description-container"]}>

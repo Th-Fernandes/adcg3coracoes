@@ -1,5 +1,9 @@
+import { CronogramaPage } from "../../src/components/cronograma-page"
+
 export default function () {
   return (
-    <h1>hello world</h1>
+    <CronogramaPage
+      onLoad={() => console.log('ololo')}
+    />
   )
 }

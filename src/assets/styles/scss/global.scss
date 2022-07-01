@@ -22,6 +22,11 @@
 
 html {
   font-size: 62.5%;
+  
+  ::selection {
+    background-color: colors.$brand;
+    color: colors.$white;
+  }
 
   header {
     @include defaultPaddingSize();
@@ -89,6 +94,10 @@ a {
   font-size: 1.6rem;
   font-family: "Inter", sans-serif;
   text-decoration: none;
+
+  &:hover {
+    color: colors.$white-hover;
+  }
 }
 //section config
 
@@ -96,3 +105,20 @@ section {
   @include defaultPaddingSize();
   
 }
+
+//scroll settings
+
+::-webkit-scrollbar {
+  width: 12.5px;
+  height: 10px;
+  background-color: #CCCCCC;
+}
+
+::-webkit-scrollbar-track-piece {
+  background: rgb(238, 238, 238);
+}
+::-webkit-scrollbar-thumb {
+  background: #9b9b9b;
+  border-radius: 5px;
+}
+

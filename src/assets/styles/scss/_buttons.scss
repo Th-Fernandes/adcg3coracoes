@@ -4,12 +4,28 @@
   min-height: 4.5rem;
   border-radius: 3.2rem;
   border: none;
+
+  -webkit-touch-callout: none;  /* iPhone OS, Safari */
+  -webkit-user-select: none;    /* Chrome, Safari 3 */
+  -khtml-user-select: none;     /* Safari 2 */
+  -moz-user-select: none;       /* Firefox */
+  -ms-user-select: none;        /* IE10+ */
+  user-select: none;   
 }
 
 @mixin lightButton {
   @include defaultButton();
   background-color: colors.$white;
   font-size: 1.6rem;
+  animation: fadeIn 2s;
+
+  &:hover {
+    background-color: colors.$white-hover;
+  }
+
+  &:focus {
+    outline: 2px solid colors.$black;
+  }
 }
 
 @mixin brandButton {
@@ -21,6 +37,11 @@
 
   &:hover {
     background-color: colors.$brand-hover;
+  }
+
+  &:focus {
+    border: none;
+    outline: 2px solid colors.$brand-hover;
   }
 
   @media (min-width: 768px) {
