@@ -10,6 +10,7 @@
   min-height: 7rem;
   position: sticky;
   inset: 0;
+  z-index: 999;
 
   .header-container {
     flex-grow: 1;

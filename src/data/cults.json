@@ -3,7 +3,13 @@
       "title": "QUARTA",
       "caption": "Círculo de oração",
       "description": "A oração é um hábito muito importante na vida de todo cristão. Venha se juntar ao círculo de oração para melhorar sua comunhão com cristo conversando diretamente com o todo poderoso.",
-      "time": "09:00"
+      "time": "09:00",
+      "speaker": {
+        "name": "Círculo de oração",
+        "office": "",
+        "description": "",
+        "img": "/img/preletores/unknown.svg"
+      }
     },
     "quarta-noite":{
       "title": "QUARTA",
@@ -11,36 +17,61 @@
       "description": "Quer aprofundar seus conhecimentos sobre a bíblia, entendendo ponto a ponto sobre cada livro? O culto de ensino é a solução perfeita!",
       "time": "19:00",
       "speaker": {
-        "name": "Adriel Souza"
+        "name": "Adriel Souza",
+        "office": "Pr. ",
+        "description": "Dirigente da congregação",
+        "img": "/img/preletores/adriel-souza.svg"
       }
-        
-      
     },
 
     "sexta": {
       "title": "SEXTA",
       "caption": "O culto da vitória",
       "description": "venha buscar e agradecer as vitórias feitas por cristo em sua vida. O culto da vitória é uma ótima oportunidade para fortaceler seu prpopósito com jesus.",
-      "time": "19:00"
+      "time": "19:00",
+      "speaker": {
+        "name": "Antônio",
+        "office": "Pb.",
+        "description": "",
+        "img": "/img/preletores/unknown.svg"
+      }
     },
 
     "sabado": {
       "title": "SABADO",
       "caption": "O culto de libertação",
       "description": "lorem",
-      "time": "09:00"
+      "time": "09:00",
+      "speaker": {
+        "name": "Solange",
+        "office": "Dc.",
+        "description": "Dirigente do culto de libertação",
+        "img": "/img/preletores/solange.svg"
+      }
     },
     "domingo-manha": {
       "title": "DOMINGO",
       "caption": "Escola bíblica dominical",
       "description": "A busca pelo conhecimento da palavra é fundamental para criar raízes fortes com cristo. Venha aprender um pouco mais sobre a palavra através de nossa escola bíblica dominical.",
-      "time": "08:45"
+      "time": "08:45",
+      "speaker": {
+        "name": "",
+        "office": "",
+        "description": "",
+        "img": "/img/preletores/unknown.svg"
+      }
     },
     "domingo-noite": {
       "title": "DOMINGO",
       "caption": "O culto de adoração",
       "description": "Adorar a Deus e viver em comunhão é essencial na vida do cristão. Venha louvar e engrandecer o nome de Deus conosco. ",
-      "time": "18:00"
+      "time": "18:00",
+      "speaker": {
+        "name": "",
+        "office": "",
+        "description": "",
+        "img": "/img/preletores/unknown.svg"
+      }
     }
     
 }

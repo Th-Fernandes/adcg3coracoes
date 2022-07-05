@@ -11,12 +11,16 @@ main {
 
     .speaker-container {
       .speaker-img {
-        width: min(100%, 42.5rem);
+        width: min(100%, 40rem);
         display: block;
         margin: 0 auto -0.1rem;
 
         @media(min-width: 768px) {
+          width: 30rem;
           margin: 0 auto -18.25rem;
+        }
+        @media(min-width: 1024px) {
+          width: 45rem
         }
       }
 
@@ -24,34 +28,37 @@ main {
         padding: 6.4rem 0.8rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        height: 40rem;
+        justify-content: center;
+        height: 30rem;
         background-color: colors.$dark-bg;
         color: colors.$light-text;
 
         @media (min-width: 768px) {
-          height: 47.5rem;
-          justify-content: flex-end;
+          height: 37.5rem;
+          justify-content: end;
         }
 
         @media (min-width: 1024px) {
-          height: 55rem;
-          
+          height: 52.5rem;
+          justify-content: center;
         }
 
-        .speaker-name {
-          text-align: center;
-
-          @media (min-width: 768px) {
-            margin: 2rem 0;
+        .speaker-text-container {
+          text-align: center; 
+         
+          @media (min-width: 1024px) {
+            margin-top: 5rem;
+  
+          }
+          .speaker-description {
+            font-family: "Inter", sans-serif;
+            color: #d9d9d9;
+            max-width: 60rem;
+            margin: 0 auto 1.2rem;
           }
         }
 
-        .speaker-description {
-          font-family: "Inter", sans-serif;
-          max-width: 60rem;
-          margin: 0 auto 1.2rem;
-        }
+        
 
         .speaker-redirector-button {
           @include buttons.lightButton();
