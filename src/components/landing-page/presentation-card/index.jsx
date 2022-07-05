@@ -9,7 +9,7 @@ export function PresentationCardLandingPage() {
       <h2> SOMOS A ADCG - CONGREGAÇÃO 3 CORAÇÕES </h2>
 
       <button 
-        onClick={() => nextRouter.push('/Sobre-nos')}
+        onClick={() => nextRouter.push('/info')}
         className={landingPageStyles["default-light-button"]}>
         Conheça mais sobre nós
       </button>
