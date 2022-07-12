@@ -9,9 +9,9 @@ export function GlobalHeader() {
 
   function showApplicationRoutes() {
     const navegacaoAplicacao = [ 
-      {rout: '/Guia-novo-convertido', title:'Guia do novo convertido'},
+      {rout: '/info', title:'Localização'},
       {rout: 'Sobre-nos', title: 'Quem somos'},
-      {rout: '/cronograma/', title: 'Cronograma'},
+      {rout: '/cronograma/domingo-noite', title: 'Cronograma'},
       {rout: '/Louvores', title: 'Louvores'},
     ]
 

@@ -9,11 +9,8 @@ export function LandingPage() {
       <GlobalHeader/>
 
       <main>
-        
         <PresentationCardLandingPage/>
-
         <RedirectorLandingPage/>
-
         <GlobalCronograma/>
       </main>
     </>

@@ -5,17 +5,18 @@ export function RedirectorLandingPage() {
   const router = useRouter()
 
   function handleRedirectToGuiaNovoConvertidoPage() {
-    router.push('/Guia-novo-convertido')
+    router.push('/Louvores')
   }
 
   return (
     <section className={landingPageStyles["guia-novo-convertido"]}>
       <div className={landingPageStyles["section-container"]}>
-        <h2>Guia do novo convertido</h2>
+        <h2>Vem louvar!</h2>
         <p>
-          Deseja criar bases firmes com Deus na sua
-          vida mas não sabe por onde começar? Nós
-          temos um guia perfeito para te auxiliar!
+          Quer ouvir um bom louvor? recomendamos
+          ouvir a playlist selecionada por nós! 
+          Ouça aqui os louvores tocados em nossa
+          congregação.
         </p>
 
         <button onClick={handleRedirectToGuiaNovoConvertidoPage}>
