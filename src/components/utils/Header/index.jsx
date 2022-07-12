@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { useRouter } from "next/router";
 import { MobileNavGlobalHeader } from "./mobile-nav";
 import { DesktopNavGlobalHeader } from "./desktop-nav";
@@ -21,7 +22,7 @@ export function GlobalHeader() {
           onClick={() => router.push(rout) }
           key={index}
         > 
-          <a href="#">{title}</a>
+          <Link href={rout}>{title}</Link>
         </li>
       ))
     )
