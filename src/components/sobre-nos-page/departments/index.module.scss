@@ -1,17 +1,18 @@
 @use "../../../assets/styles/scss/utils";
 
 main {
-  .groups-section {
+  .departments-container {
     @include utils.maxSizeContainer();
-    margin-top: 2.5rem;
+    margin: 2.5rem auto;
 
     @media (min-width: 768px) {
-      margin-top: 5rem
+      margin: 5rem auto;
     }
 
-    .groups-list {
+
+    .departments-list {
       display: grid;
-      grid-template-columns: repeat( 4, 28rem);
+      grid-template-columns: repeat( 6, 28rem);
       height: 35rem;
       column-gap: 3rem;
       overflow-x: auto;
@@ -20,7 +21,8 @@ main {
       @media (min-width: 768px) {
         height: auto;
         display: flex;
-        gap: 3rem;        
+        gap: 3rem;
+        
         flex-wrap: wrap;
       }
     }

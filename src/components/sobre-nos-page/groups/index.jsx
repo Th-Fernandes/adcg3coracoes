@@ -11,7 +11,7 @@ export function GroupsSobreNosPage() {
 
   return (
     <section className={sobreNosStyles["groups-section"]}>
-      <h2>Nossos grupos</h2>
+      <h2 className={sobreNosStyles["groups-title"]}>Nossos grupos</h2>
       <p>
         Congregar é essencial! conheça nossos grupos 
         e encontre em qual você mais se encaixa!
@@ -19,8 +19,8 @@ export function GroupsSobreNosPage() {
 
       <ul className={sobreNosStyles['groups-list']}>
         {
-          groupsData.map(({title, caption}) => (
-            <DefaultCard title={title} caption={caption}/>
+          groupsData.map(({title, caption}, index) => (
+            <DefaultCard title={title} caption={caption} key={index}/>
           ))
         }
       </ul>
