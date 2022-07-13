@@ -30,15 +30,12 @@ export function GlobalHeader() {
 
   return (
     <header className={globalHeaderStyle["main-header"]}>
-    {console.log(router)}
-
       <div className={globalHeaderStyle["header-container"]}>
         <h1 onClick={() => router.push('/') }>
           <img src={headerLogo.src} alt="Voltar ao menu principal" />
         </h1>
 
         <MobileNavGlobalHeader showApplicationRoutes={showApplicationRoutes} />
-
         <DesktopNavGlobalHeader showApplicationRoutes={showApplicationRoutes} />
       </div>
     </header>
