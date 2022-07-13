@@ -14,6 +14,10 @@ export function SpeakerDescriptionCronogramaPage() {
     return speakerData
   }
 
+  function handleRedirectToSobreNos() {
+    nextRouter.push('/Sobre-nos')
+  }
+
 
   return (
     <section className={cronogramaPageStyles['speaker-section']}>
@@ -31,7 +35,10 @@ export function SpeakerDescriptionCronogramaPage() {
               </p>
             </div>
 
-            <button className={cronogramaPageStyles["speaker-redirector-button"]}>
+            <button 
+              className={cronogramaPageStyles["speaker-redirector-button"]}
+              onClick={handleRedirectToSobreNos}  
+              >
             Conheça nossa equipe
             </button>
           </div>
