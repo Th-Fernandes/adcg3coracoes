@@ -1,0 +1,25 @@
+@use "../../../assets/styles/scss/utils";
+
+main {
+  .groups-section {
+    @include utils.maxSizeContainer();
+    margin-top: 2.5rem;
+
+    @media (min-width: 768px) {
+      margin-top: 5rem
+    }
+
+    .groups-list {
+      display: grid;
+      grid-template-columns: repeat( 4 , 28rem);
+      height: 40rem;
+      column-gap: 3rem;
+      overflow-x: auto;
+      
+      @media (min-width: 1024px) {
+        height: 47rem;
+        grid-template-columns: repeat( 4 , 40rem);
+      }
+    }
+  }
+}

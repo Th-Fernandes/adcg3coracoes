@@ -1,4 +1,5 @@
 import { GlobalHeader } from "../utils/Header";
+import {GroupsSobreNosPage} from "./groups";
 
 export function SobreNosPage() {
   return (
@@ -6,7 +7,7 @@ export function SobreNosPage() {
     <GlobalHeader />
 
     <main>
-      Hello world
+      <GroupsSobreNosPage/>
     </main>
     </>
   )

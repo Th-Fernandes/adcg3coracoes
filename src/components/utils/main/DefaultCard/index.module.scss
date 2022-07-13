@@ -1,0 +1,25 @@
+@use "../../../../assets/styles/scss/colors";
+
+main {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 40rem;
+    height: 40rem;
+    margin-top: 2.5rem;
+    background-color: colors.$brand;
+    color: colors.$white;
+    border-radius: 3rem;
+    list-style-type: none;
+
+    @media(min-width: 768px) {
+      margin-top: 5rem;
+    }
+
+    .card-caption {
+      margin-bottom: 2.5rem
+    }
+  }
+}

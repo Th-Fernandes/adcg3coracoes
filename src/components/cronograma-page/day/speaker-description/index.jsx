@@ -2,7 +2,7 @@ import speakerInfo from "../../../../data/cults.json";
 import cronogramaPageStyles from "./index.module.scss";
 import {useRouter} from "next/router"
 
-export function SpeakerDescriptionCronogramaPage({href}) {
+export function SpeakerDescriptionCronogramaPage() {
   const nextRouter = useRouter()
   const {name, office, description, img} = getSpeakerDataByRoute() 
 
