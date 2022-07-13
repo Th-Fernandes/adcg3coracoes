@@ -11,15 +11,15 @@ export function GlobalHeader() {
   function showApplicationRoutes() {
     const navegacaoAplicacao = [ 
       {rout: '/info', title:'Localização'},
-      {rout: 'Sobre-nos', title: 'Quem somos'},
       {rout: '/cronograma/domingo-noite', title: 'Cronograma'},
+      {rout: '/Sobre-nos', title: 'Quem somos'},
       {rout: '/Louvores', title: 'Louvores'},
     ]
 
     return (
       navegacaoAplicacao.map(({rout, title}, index) => (
         <li 
-          onClick={() => router.push(rout) }
+          
           key={index}
         > 
           <Link href={rout}>{title}</Link>
@@ -29,8 +29,9 @@ export function GlobalHeader() {
   }
 
   return (
-
     <header className={globalHeaderStyle["main-header"]}>
+    {console.log(router)}
+
       <div className={globalHeaderStyle["header-container"]}>
         <h1 onClick={() => router.push('/') }>
           <img src={headerLogo.src} alt="Voltar ao menu principal" />
