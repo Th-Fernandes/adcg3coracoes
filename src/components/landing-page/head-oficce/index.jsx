@@ -19,8 +19,8 @@ export function HeadOfficeLandingPage() {
     let socialMediaUrl = undefined;
 
     textContent.includes('página')
-      ? socialMediaUrl = 'https://www.youtube.com/c/ADCampoGrande'
-      : socialMediaUrl = 'https://www.facebook.com/adcampogranderj/'
+      ? socialMediaUrl = 'https://www.facebook.com/adcampogranderj/'
+      : socialMediaUrl = 'https://www.youtube.com/c/ADCampoGrande'
 
     nextRouter.push(socialMediaUrl)
   }
