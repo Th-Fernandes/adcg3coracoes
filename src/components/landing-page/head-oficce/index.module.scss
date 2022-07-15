@@ -1,0 +1,50 @@
+@use "../../../assets/styles/scss/utils";
+@use "../../../assets/styles/scss/buttons";
+
+@mixin socialMediaButton {
+    width: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem auto 1.2rem;   
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+main {
+
+  .head-oficce-main-container {
+    @include utils.maxSizeContainer();
+    margin-bottom: 2.5rem;
+
+    @media (min-width: 768px) {
+      margin: 10rem auto 5rem;
+    }
+
+    .head-oficce-button-container {
+      list-style-type: none;
+      @media (min-width: 768px) {
+        display: inline-block;
+
+
+        &:first-child {
+          margin-right: 3rem;
+        }
+      }
+      
+      .head-oficce-facebook-button {
+        @include buttons.brandButton;
+        background-color: #4267B3;
+        @include socialMediaButton();
+      }
+
+      .head-oficce-youtube-button {
+        @include buttons.brandButton;
+        background-color: #FF0000;
+        @include socialMediaButton()
+      }
+    }
+  }
+  
+}
