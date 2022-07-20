@@ -6,7 +6,7 @@ export function GlobalCronograma({onChangeRoute}) {
   const nextRouter = useRouter()
 
   function showCults() {
-    console.log(Object.entries(cultsDescription))
+    // console.log(Object.entries(cultsDescription))
     const jsonCultsDataToArray = Object.entries(cultsDescription)
 
     const printData = jsonCultsDataToArray

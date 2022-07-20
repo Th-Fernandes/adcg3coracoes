@@ -8,6 +8,7 @@ export function LouvoresPage() {
 
       <main>
         <PlaylistOptionsLouvoresPage/>
+        
       </main>
     </>
   )

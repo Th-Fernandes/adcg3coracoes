@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
-import { FacebookLogo, YoutubeLogo } from "phosphor-react";
+import { FacebookLogo, Key, YoutubeLogo } from "phosphor-react";
+import { SocialMediaButton } from "../../utils/main/SocialMediaButton";
 import landingPageStyles from "./index.module.scss";
 
 export function HeadOfficeLandingPage() {
@@ -38,26 +39,9 @@ export function HeadOfficeLandingPage() {
 
       <ul>
         {
-          ['acessar página', 'acessar canal'].map((textContent, index) => (
+          ['facebook', 'youtube'].map((platform, index) => (
             <li className={landingPageStyles["head-oficce-button-container"]} key={index}>
-              <button
-                className={landingPageStyles[handleSetButtonClassName(textContent)]}
-                >
-                <a 
-                className={landingPageStyles["head-oficce-link"]}
-                  href={handleRedirectToSocialMedia(textContent)}
-                  target="_blank">
-                    {
-                      textContent.includes('página')
-                        ? <FacebookLogo size={48} color="#ffffff" weight="fill" />
-                        : <YoutubeLogo size={48} color="#ffffff" weight="fill" />
-                    }
-                    <span>{textContent}</span>
-                </a>
-              </button>
-
-
-
+              <SocialMediaButton platform={platform} />
             </li>
           ))
         }
@@ -65,4 +49,3 @@ export function HeadOfficeLandingPage() {
     </section>
   )
 }
-

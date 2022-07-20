@@ -2,13 +2,13 @@
 @use "../../../assets/styles/scss/buttons";
 
 @mixin socialMediaButton {
-    width: 25rem;
-    margin: 2rem auto 1.2rem;   
-    display: flex;
-          align-items: center;
-          justify-content: center;
-    font-size: 1.5rem;
-    font-weight: bold;
+  width: 25rem;
+  margin: 2rem auto 1.2rem;   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 main {
@@ -29,28 +29,6 @@ main {
 
         &:first-child {
           margin-right: 3rem;
-        }
-      }
-      
-      .head-oficce-facebook-button {
-        @include buttons.brandButton;
-        background-color: #4267B3;
-        @include socialMediaButton();
-      }
-
-      .head-oficce-youtube-button {
-        @include buttons.brandButton;
-        background-color: #FF0000;
-        @include socialMediaButton()
-      }
-
-      .head-oficce-facebook-button,
-      .head-oficce-youtube-button {
-        .head-oficce-link {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 1rem;
         }
       }
     }
