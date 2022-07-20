@@ -3,11 +3,10 @@
 
 @mixin socialMediaButton {
     width: 25rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
     margin: 2rem auto 1.2rem;   
+    display: flex;
+          align-items: center;
+          justify-content: center;
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -43,6 +42,16 @@ main {
         @include buttons.brandButton;
         background-color: #FF0000;
         @include socialMediaButton()
+      }
+
+      .head-oficce-facebook-button,
+      .head-oficce-youtube-button {
+        .head-oficce-link {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 1rem;
+        }
       }
     }
   }
