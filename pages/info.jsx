@@ -1,7 +1,18 @@
-import { InfoPage } from "components/info-page"
+import { GlobalHeader } from "components/utils/Header";
+import { AddressInfo } from "components/info-page/address-info";
+import { GlobalCronograma } from "components/utils/main/cronograma";
+import { SobreNosRedirector } from "components/info-page/about-us-redirector";
 
-export default function () {
+export default function InfoPage() {
   return (
-    <InfoPage />
+    <>
+      <GlobalHeader/>
+
+      <main>
+        <AddressInfo/>
+        <GlobalCronograma/>
+        <SobreNosRedirector/>
+      </main>    
+    </>
   )
 }

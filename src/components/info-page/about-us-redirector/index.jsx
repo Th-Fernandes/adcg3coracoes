@@ -1,8 +1,7 @@
 import {useRouter} from "next/router";
 import InfoStyles from "./index.module.scss";
 
-
-export default function RedirectorAboutUsInfoPage(){
+export function SobreNosRedirector(){
   const nextRouter = useRouter();
 
   function handleRedirectToSobreNos() {

@@ -1,6 +1,6 @@
 import infoStyles from "./index.module.scss";
 
-export function AddressInfoPage(){
+export function AddressInfo(){
   return (
     <section className={infoStyles["address-section"]} >
       <h2 className={infoStyles["address-title"]}>Venha nos visitar!</h2>
