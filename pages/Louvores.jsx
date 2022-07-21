@@ -1,8 +1,14 @@
-import { LouvoresPage } from "components/louvores-page";
+import { GlobalHeader } from "components/utils/Header";
+import {PlaylistOptionsLouvoresPage} from "components/louvores-page/playlist-options";
 
-
-export default function () {
+export default function LouvoresPage() {
   return (
-   <LouvoresPage />
+    <>
+      <GlobalHeader/>
+
+      <main>
+        <PlaylistOptionsLouvoresPage/>      
+      </main>
+    </>
   )
 }

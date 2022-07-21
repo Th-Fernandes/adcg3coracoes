@@ -1,0 +1,14 @@
+[
+  { 
+    "title": "Youtube", 
+    "img": "/img/youtube-icon.svg", 
+    "className": "youtube",
+    "url":"https://www.youtube.com/watch?v=5QHF5OQeFOs&ab_channel=CASAWorship"
+  },
+  { 
+    "title": "Spotify", 
+    "img": "/img/spotify-icon.svg", 
+    "className": "spotify",
+    "url": "https://open.spotify.com/playlist/70pcCrwZu8fI3K9MyhCP3T?utm_source=generator&theme=0"
+  }
+]
