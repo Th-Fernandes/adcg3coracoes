@@ -1,4 +1,4 @@
-import { InfoPage } from "../src/components/info-page"
+import { InfoPage } from "components/info-page"
 
 export default function () {
   return (

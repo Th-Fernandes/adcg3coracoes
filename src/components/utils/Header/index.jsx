@@ -19,7 +19,6 @@ export function GlobalHeader() {
     return (
       navegacaoAplicacao.map(({rout, title}, index) => (
         <li 
-          
           key={index}
         > 
           <Link href={rout}>{title}</Link>

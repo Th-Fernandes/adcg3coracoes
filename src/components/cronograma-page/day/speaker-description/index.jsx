@@ -1,6 +1,8 @@
 import speakerInfo from "../../../../data/cults.json";
 import cronogramaPageStyles from "./index.module.scss";
-import {useRouter} from "next/router"
+import {useRouter} from "next/router";
+import Link from "next/link";
+
 
 export function SpeakerDescriptionCronogramaPage() {
   const nextRouter = useRouter()
@@ -39,7 +41,9 @@ export function SpeakerDescriptionCronogramaPage() {
               className={cronogramaPageStyles["speaker-redirector-button"]}
               onClick={handleRedirectToSobreNos}  
               >
-            Conheça nossa equipe
+                <Link href="/Sobre-nos">
+                  <a>Conheça nossa equipe</a>   
+                </Link>
             </button>
           </div>
       </div>

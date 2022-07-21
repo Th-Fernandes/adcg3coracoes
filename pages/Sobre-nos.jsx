@@ -1,4 +1,4 @@
-import { SobreNosPage } from "../src/components/sobre-nos-page"
+import { SobreNosPage } from "components/sobre-nos-page"
 
 export default function() {
   return (

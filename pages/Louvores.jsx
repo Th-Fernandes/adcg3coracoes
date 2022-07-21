@@ -1,4 +1,4 @@
-import { LouvoresPage } from "../src/components/louvores-page";
+import { LouvoresPage } from "components/louvores-page";
 
 
 export default function () {

@@ -3,8 +3,6 @@ import { GlobalCronograma } from "../utils/main/cronograma";
 
 
 export function CronogramaPage() {
-  const toggleDescriptionByRoute = 'quarta-manha'
-
   return (
     <>
     <GlobalHeader/>

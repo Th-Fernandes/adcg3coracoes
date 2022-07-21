@@ -19,6 +19,9 @@
   font-size: 1.6rem;
   animation: fadeIn 2s;
 
+  > a {
+    color: black
+  }
   &:hover {
     background-color: colors.$white-hover;
   }
