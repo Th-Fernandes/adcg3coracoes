@@ -1,10 +1,10 @@
 import landingPageStyles from "./index.module.scss";
 import {useRouter} from "next/router";
 
-export function RedirectorLandingPage() {
+export function LouvoresRedirector() {
   const router = useRouter()
 
-  function handleRedirectToGuiaNovoConvertidoPage() {
+  function handleRedirectToLouvoresPage() {
     router.push('/Louvores')
   }
 
@@ -19,7 +19,7 @@ export function RedirectorLandingPage() {
           congregação.
         </p>
 
-        <button onClick={handleRedirectToGuiaNovoConvertidoPage}>
+        <button onClick={handleRedirectToLouvoresPage}>
           acesse aqui
         </button>
       </div>

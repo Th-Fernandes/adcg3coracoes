@@ -2,11 +2,11 @@
 @use "../../../assets/styles/scss/buttons";
 
 @mixin socialMediaButton {
-  width: 25rem;
-  margin: 2rem auto 1.2rem;   
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 25rem;
+  margin: 2rem auto 1.2rem;   
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -23,6 +23,7 @@ main {
 
     .head-oficce-button-container {
       list-style-type: none;
+      
       @media (min-width: 768px) {
         display: inline-block;
 

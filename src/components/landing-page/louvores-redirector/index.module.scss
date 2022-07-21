@@ -4,9 +4,10 @@
 
 main {
   .guia-novo-convertido {
+    @include utils.maxSizeContainer();
+
     .section-container {
-      @include utils.maxSizeContainer();
-      margin-top: 5rem;
+      margin: 5rem auto;
 
       button {
         @include buttons.brandButton();
@@ -14,8 +15,8 @@ main {
         margin-top: 2rem;
       }
 
-      @media (min-width: 768px) {
-        margin-top: 10rem;
+      @media (min-width: 1024px) {
+        margin: 7.5rem 0;
       }
     }
   }
