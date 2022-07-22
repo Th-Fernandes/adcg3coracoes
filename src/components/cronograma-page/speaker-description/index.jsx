@@ -1,8 +1,7 @@
-import speakerInfo from "../../../../data/cults.json";
+import speakerInfo from "data/cults.json";
 import cronogramaPageStyles from "./index.module.scss";
 import {useRouter} from "next/router";
 import Link from "next/link";
-
 
 export function SpeakerDescriptionCronogramaPage() {
   const nextRouter = useRouter()
@@ -19,7 +18,6 @@ export function SpeakerDescriptionCronogramaPage() {
   function handleRedirectToSobreNos() {
     nextRouter.push('/Sobre-nos')
   }
-
 
   return (
     <section className={cronogramaPageStyles['speaker-section']}>
@@ -47,7 +45,6 @@ export function SpeakerDescriptionCronogramaPage() {
             </button>
           </div>
       </div>
-
     </section>
   )
 }

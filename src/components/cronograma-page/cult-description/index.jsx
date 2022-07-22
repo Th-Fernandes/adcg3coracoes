@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react"
-import cultsDescription from "../../../../data/cults.json"
+import { useEffect, useState } from "react";
+import cultsDescription from "data/cults.json";
 import cronogramaPageStyles from "./index.module.scss"
 
 export function CultDescriptionCronogramaPage({actualRoute}) {

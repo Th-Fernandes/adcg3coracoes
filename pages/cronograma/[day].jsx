@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import { DayCronogramaPage } from "../../src/components/cronograma-page/day";
+import { GlobalHeader } from "components/utils/Header";
+import { DayCronogramaPage } from "components/cronograma-page";
 
-export default function () {
+export default function cronogramaPage() {
   const [isUrlValid, setIsUrlValid] = useState(true)
 
   useEffect(() => {
@@ -22,11 +23,15 @@ export default function () {
 
   return (
     <>
-      {
-        isUrlValid
-          ? <DayCronogramaPage/>
-          : <h1>url inválida</h1>
-      }
+      <GlobalHeader/>
+
+      <main>
+        {
+          isUrlValid
+            ? <DayCronogramaPage/>
+            : <h1>url inválida</h1>
+        }
+      </main>
     </>
   )
 }

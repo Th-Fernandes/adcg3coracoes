@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import cultsDescription from "../../../../data/cults.json";
+import cultsDescription from "data/cults.json";
 import GlobalCronogramaStyle from './index.module.scss';
 
 export function GlobalCronograma({onChangeRoute}) {
