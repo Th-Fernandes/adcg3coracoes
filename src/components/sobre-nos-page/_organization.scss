@@ -1,0 +1,17 @@
+@mixin containerList($columns) {
+  display: grid;
+  grid-template-columns: repeat( $columns, 28rem);
+  row-gap: 3rem;
+  column-gap: 3rem;
+  padding-block: 3rem;
+  margin-block: 2.5rem;
+  overflow-x: auto;
+
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;        
+    margin-block: 5rem;
+    height: auto;
+  }
+}

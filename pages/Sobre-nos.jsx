@@ -1,7 +1,16 @@
-import { SobreNosPage } from "components/sobre-nos-page"
+import { GlobalHeader } from "components/utils/Header";
+import { OurGroups } from "components/sobre-nos-page/groups";
+import { OurDepartments } from "components/sobre-nos-page/departments";
 
-export default function() {
+export default function SobreNosPage() {
   return (
-    <SobreNosPage />
+    <>
+      <GlobalHeader />
+
+      <main>
+        <OurGroups />
+        <OurDepartments />
+      </main>
+    </>
   )
 }

@@ -4,32 +4,6 @@ import {EmberYoutubePlayer} from "components/louvores-page/playlist-options/plat
 import {EmberSpotifyPlayer} from "components/louvores-page/playlist-options/platforms-ember/spotify"
 
 export function PlaylistOptionsLouvoresPage() {
-  // const platforms = [
-  //   { 
-  //     title: 'Youtube', 
-  //     img: '/img/youtube-icon.svg', 
-  //     className: louvoresPageStyle["youtube"],
-  //     url:'https://www.youtube.com/watch?v=5QHF5OQeFOs&ab_channel=CASAWorship',
-  //     emberPlayer: <iframe
-  //       width="800" height="377"
-  //       src="https://www.youtube.com/embed/5QHF5OQeFOs?list=PL93fhHSVyXGFA_U9kv-7j4XXu2LXDxYMX" title="A Casa É Sua - Casa Worship (Clipe Oficial) @Julliany Souza , @Léo Brandão"
-  //       frameBorder="0"
-  //       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  //       allowFullScreen={true} />
-  //   },
-  //   { 
-  //     title: 'Spotify', 
-  //     img: '/img/spotify-icon.svg', 
-  //     className: louvoresPageStyle["spotify"],
-  //     url: 'https://open.spotify.com/playlist/70pcCrwZu8fI3K9MyhCP3T?utm_source=generator&theme=0',
-  //     emberPlayer:  <iframe
-  //     src="https://open.spotify.com/embed/playlist/70pcCrwZu8fI3K9MyhCP3T?utm_source=generator&theme=0"
-  //     width="800" height="375"
-  //     frameBorder="0" allowFullScreen={true}
-  //     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" />
-  //   }
-  // ]
-
   return (
     <section className={louvoresPageStyle["playlist-options-container"]}>
       <span>
@@ -50,13 +24,11 @@ export function PlaylistOptionsLouvoresPage() {
                   </div>
                 </a>
               </article>
-              
                 {
                   title.includes('Youtube') 
                     ? <EmberYoutubePlayer/>
                     : <EmberSpotifyPlayer/>
                 }
-            
             </li>
           ))
         }

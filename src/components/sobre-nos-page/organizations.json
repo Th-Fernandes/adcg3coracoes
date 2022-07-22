@@ -1,0 +1,46 @@
+{
+  "groups": [
+    {
+      "title": "DEPIN", 
+      "caption": "grupo infantil"
+    },
+    {
+      "title": "CIBE", 
+      "caption": "O grupo das mulheres"
+    },
+    {
+      "title": "MOCIDADE", 
+      "caption": "O grupo dos jovens adultos"
+    },
+    {
+      "title": "ADOLESCENTE", 
+      "caption": "O grupo dos adolescentes"
+    }
+  ],
+  "departments": [
+    {
+      "title": "Departamento de",
+      "caption": "evangelismo"
+    },
+    {
+      "title": "Departamento da",
+      "caption": "familia"
+    },
+    {
+      "title": "Departamento dos",
+      "caption": "novos concedidos"
+    },
+    {
+      "title": "Departamento de",
+      "caption": "missões"
+    },
+    {
+      "title": "Conselho diaconal",
+      "caption": ""
+    },
+    {
+      "title": "Libertação",
+      "caption": ""
+    }
+  ]
+}

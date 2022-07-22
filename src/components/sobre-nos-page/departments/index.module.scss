@@ -1,4 +1,5 @@
-@use "../../../assets/styles/scss/utils";
+@use "assets/styles/scss/utils";
+@use "components/sobre-nos-page/organization";
 
 main {
   .departments-container {
@@ -9,22 +10,8 @@ main {
       margin: 5rem auto;
     }
 
-
     .departments-list {
-      display: grid;
-      grid-template-columns: repeat( 6, 28rem);
-      height: 35rem;
-      column-gap: 3rem;
-      overflow-x: auto;
-      
-      
-      @media (min-width: 768px) {
-        height: auto;
-        display: flex;
-        gap: 3rem;
-        
-        flex-wrap: wrap;
-      }
+      @include organization.containerList(6);
     }
   }
 }
