@@ -1,5 +1,5 @@
-@use "../../../assets/styles/scss/colors";
-@use "../../../assets/styles/scss/utils";
+@use "assets/styles/scss/colors";
+@use "assets/styles/scss/display";
 
 .main-header {
   display: flex;
@@ -7,7 +7,7 @@
   justify-content: space-between;
   background-color: colors.$dark-bg;
   box-shadow: 0px 0px 1rem colors.$dark-bg ;
-  min-height: 7rem;
+  min-height: 7rem; 
   position: sticky;
   inset: 0;
   z-index: 999;
@@ -19,7 +19,7 @@
     justify-content: space-between;
 
     @media (min-width: 768px) {
-      @include utils.maxSizeContainer();
+      @include display.setMaxWidth();
     }
     
     > h1 {

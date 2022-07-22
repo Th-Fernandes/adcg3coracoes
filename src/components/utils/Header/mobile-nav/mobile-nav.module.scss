@@ -1,5 +1,5 @@
-@use "../../../../assets/styles/scss/utils";
-@use "../../../../assets/styles/scss/colors";
+@use "assets/styles/scss/display";
+@use "assets/styles/scss/colors";
 
 .mobile-ver {
   .ph-list-bold {
@@ -14,10 +14,10 @@
     position: fixed;
     inset: 0;
     top: 5rem;
-    @include utils.hideContent();
+    @include display.hide();
 
     &.visible {
-      @include utils.showContent();
+      @include display.show();
     }
     
     .mobile-nav {
@@ -59,6 +59,6 @@
   }
 
   @media (min-width: 768px) {
-    @include utils.hideContent();
+    @include display.hide();
   }
 }

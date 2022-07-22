@@ -1,9 +1,9 @@
 @use "assets/styles/scss/colors";
-@use "assets/styles/scss/utils";
+@use "assets/styles/scss/display";
 
 main {
   .playlist-options-container {
-    @include utils.maxSizeContainer();
+    @include display.setMaxWidth();
     margin: 2.5rem auto;
 
     @media (min-width: 768px) {
@@ -81,11 +81,11 @@ main {
         }
 
         > iframe {
-          @include utils.hideContent();
+          @include display.hide();
           border-radius: 0.8rem;
 
           @media (min-width: 1024px) {
-            @include utils.showContent();
+            @include display.show();
           }
         }
       }

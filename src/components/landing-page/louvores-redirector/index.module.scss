@@ -1,10 +1,10 @@
 @use "assets/styles/scss/colors";
-@use "assets/styles/scss/utils";
+@use "assets/styles/scss/display";
 @use "assets/styles/scss/buttons";
 
 main {
   .guia-novo-convertido {
-    @include utils.maxSizeContainer();
+    @include display.setMaxWidth();
 
     .section-container {
       margin: 5rem auto;

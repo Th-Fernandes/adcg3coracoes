@@ -1,4 +1,4 @@
-@use "assets/styles/scss/utils";
+@use "assets/styles/scss/display";
 @use "assets/styles/scss/buttons";
 
 @mixin socialMediaButton {
@@ -14,7 +14,7 @@
 main {
 
   .head-oficce-main-container {
-    @include utils.maxSizeContainer();
+    @include display.setMaxWidth();
     margin-bottom: 2.5rem;
 
     @media (min-width: 768px) {

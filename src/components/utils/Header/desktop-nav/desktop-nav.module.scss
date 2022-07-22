@@ -1,11 +1,10 @@
-@use '../../../../assets/styles/scss/utils';
-
+@use "assets/styles/scss/display";
 
 .desktop-ver {
-  @include utils.hideContent();
+  @include display.hide();
 
   @media (min-width: 768px) {
-    @include utils.showContent();
+    @include display.show();
 
     > nav {
       > ul {

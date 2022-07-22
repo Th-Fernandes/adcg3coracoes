@@ -1,9 +1,9 @@
-@use "assets/styles/scss/utils";
+@use "assets/styles/scss/display";
 @use "components/sobre-nos-page/organization";
 
 main {
   .groups-section {
-    @include utils.maxSizeContainer();
+    @include display.setMaxWidth();
     margin-top: 2.5rem;
 
     @media (min-width: 768px) {

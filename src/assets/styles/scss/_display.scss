@@ -1,16 +1,16 @@
-@mixin hideContent {
+@mixin hide {
   display: none;
   opacity: 0;
   visibility: hidden;
 }
 
-@mixin showContent {
+@mixin show{
   display: block;
   opacity: 1;
   visibility: visible;
 }
 
-@mixin maxSizeContainer {
+@mixin setMaxWidth {
   max-width: 144rem;
   margin: 0 auto;
   

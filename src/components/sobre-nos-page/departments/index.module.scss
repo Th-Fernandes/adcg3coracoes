@@ -1,9 +1,9 @@
-@use "assets/styles/scss/utils";
+@use "assets/styles/scss/display";
 @use "components/sobre-nos-page/organization";
 
 main {
   .departments-container {
-    @include utils.maxSizeContainer();
+    @include display.setMaxWidth();
     margin: 2.5rem auto;
 
     @media (min-width: 768px) {
