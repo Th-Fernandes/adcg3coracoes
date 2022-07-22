@@ -1,6 +1,6 @@
-@use "../../../assets/styles/scss/colors";
-@use "../../../assets/styles/scss/utils";
-@use "../../../assets/styles/scss/buttons";
+@use "assets/styles/scss/colors";
+@use "assets/styles/scss/utils";
+@use "assets/styles/scss/buttons";
 
 main {
   .sobre-nos-card {
@@ -10,13 +10,13 @@ main {
     justify-content: flex-end;
     min-height: 33.9rem;
     padding: 0 0.8rem 4.5rem;
-    background: url(../../../../public/img/lp-sobrenos-bg-mobile.svg) no-repeat center;
+    background: url(/img/lp-sobrenos-bg-mobile.svg) no-repeat center;
     background-size: cover;
 
     @media (min-width: 768px) {
       justify-content: center;
       padding: 0;
-      background: url(../../../../public/img/lp-sobrenos-bg.svg) no-repeat
+      background: url(/img/lp-sobrenos-bg.svg) no-repeat
         center;
       background-size: cover;
     }
